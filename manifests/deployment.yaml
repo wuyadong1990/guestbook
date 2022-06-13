@@ -21,7 +21,7 @@ spec:
       containers:
         - name: devops-argocd-test
           image: wuyadong1990/hello-world:v1.0
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
               name: tcp-8080
